@@ -7,17 +7,22 @@
     "build": "nx build",
     "test": "nx test",
     "dockers:dev": "docker-compose -f dev.docker-compose.yml up -d --no-recreate --remove-orphans",
-    "db:migrate:dev": "npx env-cmd -f .env npx prisma migrate dev"
+    "db:migrate:dev": "npx env-cmd -f .env npx prisma migrate dev",
+    "db:studio": "npx env-cmd -f .env npx prisma studio"
   },
   "private": true,
   "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "@nestjs/apollo": "^12.0.9",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
+    "@nestjs/graphql": "^12.0.9",
     "@nestjs/platform-express": "^10.0.2",
     "@prisma/client": "^5.5.2",
     "@swc/helpers": "~0.5.2",
     "axios": "^1.0.0",
     "env-cmd": "^10.1.0",
+    "graphql": "^16.8.1",
     "prisma": "^5.5.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",

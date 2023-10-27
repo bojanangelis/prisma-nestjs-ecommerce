@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nestjs-fullstack/feature-user": ["feature-user/src/index.ts"],
       "@nestjs-fullstack/my-prisma-schema": ["my-prisma-schema/src/index.ts"]
     }
   },
